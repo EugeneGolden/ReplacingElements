@@ -1,0 +1,6 @@
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\bin\Debug\ReplacingElements.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\bin\Debug\ReplacingElements.exe
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\bin\Debug\ReplacingElements.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\obj\Debug\ReplacingElements.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\obj\Debug\ReplacingElements.exe
+c:\users\admin\documents\visual studio 2015\Projects\ReplacingElements\ReplacingElements\obj\Debug\ReplacingElements.pdb
