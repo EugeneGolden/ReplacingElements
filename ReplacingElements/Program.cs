@@ -20,8 +20,8 @@ namespace ArrayOfSum
             Console.Write("Введите количество столбцов массива: ");
             int rows = int.Parse(Console.ReadLine());
             float[,] array = new float[lines, rows];
-            ArrayList list = new ArrayList();
-            
+            HashSet<float> list = new HashSet<float>();
+
             //Введите элементы массива
             for (int i = 0; i < lines; i++)
             {
@@ -66,16 +66,13 @@ namespace ArrayOfSum
                         {
                             for (int l = 0; l < rows; l++)
                             {
-                                if (array[k, l] != 0)
+                                if (array[i, j] == -array[k, l])
                                 {
-                                    if (array[i, j] == -array[k, l])
-                                    {
-                                        float mediator = array[i, j];
-                                        array[i, j] = array[k, l];
-                                        array[k, l] = mediator;
-                                        list.Add(array[i, j]);
-                                        list.Add(array[k, l]);
-                                    }
+                                    float mediator = array[i, j];
+                                    array[i, j] = array[k, l];
+                                    array[k, l] = mediator;
+                                    list.Add(array[i, j]);
+                                    list.Add(array[k, l]);
                                 }
                             }
                         }
