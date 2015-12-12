@@ -58,23 +58,24 @@ namespace ArrayOfSum
             {
                 for (int j = 0; j < rows; j++)
                 {
-                    //float element = array[i, j];
-                    
-                    //Сравним данный элемент со всеми элементами этого же массива.
-                    //Отсчет строк начнем с той строки, на которой находится взятый нами элемент
-                    for (int k = i; k < lines; k++)
+                    if (!list.Contains(array[i, j]))
                     {
-                        for (int l = 0; l < rows; l++)
+                        //Сравним данный элемент со всеми элементами этого же массива.
+                        //Отсчет строк начнем с той строки, на которой находится взятый нами элемент
+                        for (int k = i; k < lines; k++)
                         {
-                            if (array[k, l] != 0)
+                            for (int l = 0; l < rows; l++)
                             {
-                                if ((array[i, j] / array[k, l] == -1) && (!list.Contains(array[i, j])))
+                                if (array[k, l] != 0)
                                 {
-                                    float mediator = array[i,j];
-                                    array[i,j] = array[k, l];
-                                    array[k, l] = mediator;
-                                    list.Add(array[i, j]);
-                                    list.Add(array[k, l]);
+                                    if (array[i, j] == -array[k, l])
+                                    {
+                                        float mediator = array[i, j];
+                                        array[i, j] = array[k, l];
+                                        array[k, l] = mediator;
+                                        list.Add(array[i, j]);
+                                        list.Add(array[k, l]);
+                                    }
                                 }
                             }
                         }
